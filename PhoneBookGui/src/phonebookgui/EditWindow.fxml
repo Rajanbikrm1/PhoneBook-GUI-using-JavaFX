@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.validation.RequiredFieldValidator?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="283.0" prefWidth="334.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="phonebookgui.EditWindowController">
+   <children>
+      <JFXTextField fx:id="nameTf" labelFloat="true" layoutX="23.0" layoutY="24.0" onKeyPressed="#nameTfKeyPressed" onKeyTyped="#nameTfKeyTyped" onMouseClicked="#nameTfMouseAction" prefHeight="31.0" prefWidth="286.0" promptText="Name" style="-fx-border-color: black;" stylesheets="@ValidationStyle.css" />
+      <JFXTextField fx:id="phNumberTf" labelFloat="true" layoutX="23.0" layoutY="95.0" onKeyPressed="#phNumberTfKeyPressed" onKeyTyped="#phNumberTfKeyTyped" onMouseClicked="#phNumberTfMouseAction" prefHeight="31.0" prefWidth="286.0" promptText="New Phone Number" style="-fx-border-color: black;" stylesheets="@ValidationStyle.css" />
+      <JFXTextField fx:id="notesTf" labelFloat="true" layoutX="23.0" layoutY="170.0" onKeyPressed="#notesTfKeyPressed" onKeyTyped="#notesTfKeyTyped" onMouseClicked="#notesTfMouseAction" prefHeight="31.0" prefWidth="286.0" promptText="New Notes" style="-fx-border-color: black;" stylesheets="@ValidationStyle.css" />
+      <RequiredFieldValidator fx:id="nameValidator" errorStyleClass="error-label" layoutX="24.0" layoutY="63.0" message="Name Field is empty" />
+      <JFXButton fx:id="addButton" layoutX="60.0" layoutY="231.0" onAction="#addButtonAction" prefHeight="31.0" prefWidth="77.0" stylesheets="@Button.css" text="Add" />
+      <JFXButton fx:id="cancelBtn" layoutX="189.0" layoutY="231.0" onAction="#cancelBtnAction" prefHeight="31.0" prefWidth="77.0" stylesheets="@Button.css" text="Cancel" />
+      <RequiredFieldValidator fx:id="numberValidator" layoutX="24.0" layoutY="135.0" message="Number Fied is empty" />
+      <RequiredFieldValidator fx:id="notesValidator" layoutX="24.0" layoutY="210.0" message="Notes Field is empty" />
+      <Label fx:id="errorLabel" layoutX="24.0" layoutY="129.0" prefHeight="23.0" prefWidth="126.0" style="-fx-background-color: greenyellow;" text="Not a valid format" textFill="#ff0033" />
+      <FontAwesomeIconView fx:id="iconView" fill="#ff0033" layoutX="291.0" layoutY="144.0" />
+   </children>
+</AnchorPane>

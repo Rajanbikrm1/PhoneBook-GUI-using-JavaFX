@@ -1,0 +1,18 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 14, 2018, 4:06:53 PM
+    Author     : Rajan
+*/
+
+.jfx-text-field .label{
+    -fx-text-fill: #ff0033;
+    -fx-background-color: greenyellow;
+}﻿
+.jfx-text-field:hover {
+    -fx-background-color: red;
+}
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" onMouseClicked="#anchorPaneMouseClicked" prefHeight="459.0" prefWidth="343.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="phonebookgui.SignUpPageController">
+   <children>
+      <JFXTextField fx:id="fNameTF" labelFloat="true" layoutX="20.0" layoutY="27.0" onKeyPressed="#fNameKeyPressed" onKeyTyped="#fNameKeyTyped" onMouseClicked="#fNameMouseClicked" prefHeight="29.0" prefWidth="303.0" promptText="Name" style="-fx-border-color: black;" />
+      <JFXTextField fx:id="lNameTF" labelFloat="true" layoutX="20.0" layoutY="101.0" onKeyPressed="#lNameKeyPressed" onKeyTyped="#lNameKeyTyped" onMouseClicked="#lNameMouseClicked" prefHeight="29.0" prefWidth="303.0" promptText="Last Name" style="-fx-border-color: black;" />
+      <JFXTextField fx:id="uIdTF" labelFloat="true" layoutX="20.0" layoutY="174.0" onKeyPressed="#uIdKeyPressed" onKeyTyped="#uIdKeyTyped" onMouseClicked="#uIdMouseClicked" prefHeight="29.0" prefWidth="303.0" promptText="User ID" style="-fx-border-color: black;" />
+      <JFXPasswordField fx:id="passwordTF" labelFloat="true" layoutX="20.0" layoutY="251.0" onAction="#actionRetypePassword" onKeyPressed="#passwordKeyPressed" onKeyTyped="#passwordKeyTyped" onMouseClicked="#passwordMouseClicked" prefWidth="303.0" promptText="Password" style="-fx-border-color: black;" />
+      <JFXPasswordField fx:id="rePasswordTF" labelFloat="true" layoutX="20.0" layoutY="323.0" onAction="#actionRetypePassword" onKeyPressed="#rePasswordKeyPressed" onKeyTyped="#rePasswordKeyTyped" onMouseClicked="#rePasswordKeyMouseClicked" prefWidth="303.0" promptText="Retype Password" style="-fx-border-color: black;" />
+      <HBox layoutX="29.0" layoutY="401.0" onMouseClicked="#vBoxMouseClicked" prefHeight="42.0" prefWidth="287.0">
+         <children>
+            <JFXButton fx:id="saveBtn" onAction="#saveButtonAction" prefHeight="45.0" prefWidth="166.0" style="-fx-background-color: lightblue;" text="Save">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="cancelBtn" onAction="#cancelButtonAction" prefHeight="45.0" prefWidth="177.0" style="-fx-background-color: lightblue;" text="Cancel">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <Label fx:id="fNameLabel" layoutX="20.0" layoutY="63.0" prefHeight="29.0" prefWidth="303.0" text="First Name field is empty" textFill="#fc0000" />
+      <Label fx:id="lNameLabel" layoutX="20.0" layoutY="139.0" prefHeight="29.0" prefWidth="303.0" text="Last Name field is empty" textFill="#fc0000" />
+      <Label fx:id="uIdLabel" layoutX="20.0" layoutY="210.0" prefHeight="29.0" prefWidth="303.0" text="User ID field is empty" textFill="#fc0000" />
+      <Label fx:id="pwdLabel" layoutX="20.0" layoutY="286.0" prefHeight="29.0" prefWidth="303.0" text="Password field is empty" textFill="#fc0000" />
+      <Label fx:id="rePwdLabel" layoutX="20.0" layoutY="361.0" prefHeight="29.0" prefWidth="303.0" text="Retype Password field is empty" textFill="#fc0000" />
+      <Label fx:id="passwordMatchLabel" layoutX="21.0" layoutY="360.0" prefHeight="29.0" prefWidth="303.0" text="Password does not match" textFill="#fc0000" />
+   </children>
+</AnchorPane>

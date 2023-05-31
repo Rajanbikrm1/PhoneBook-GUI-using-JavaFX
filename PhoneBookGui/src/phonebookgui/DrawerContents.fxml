@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vBoxStack" prefHeight="465.0" prefWidth="139.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="phonebookgui.DrawerContentsController">
+   <children>
+      <JFXButton fx:id="addDelBtn" contentDisplay="TOP" onAction="#addDelBtnAction" prefHeight="81.0" prefWidth="139.0" style="-fx-background-color: teal; -fx-border-color: black;" text="Add/Del">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/addIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <InnerShadow />
+         </effect></JFXButton>
+      <JFXButton fx:id="searchBtn" contentDisplay="TOP" onAction="#searchBtnAction" prefHeight="81.0" prefWidth="139.0" style="-fx-background-color: teal; -fx-border-color: black;" text="Search">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Search.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <InnerShadow />
+         </effect></JFXButton>
+      <JFXButton fx:id="editBtn" contentDisplay="TOP" onAction="#editBtnAction" prefHeight="80.0" prefWidth="139.0" style="-fx-background-color: teal; -fx-border-color: black;" text="Edit">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/editIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <InnerShadow />
+         </effect></JFXButton>
+      <JFXButton fx:id="listBtn" contentDisplay="TOP" onAction="#listBtnAction" prefHeight="79.0" prefWidth="139.0" style="-fx-background-color: teal; -fx-border-color: black;" text="List">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/listIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <InnerShadow />
+         </effect></JFXButton>
+      <JFXButton fx:id="singnOutBtn" contentDisplay="TOP" onAction="#signOutBtnAction" prefHeight="77.0" prefWidth="139.0" style="-fx-background-color: teal; -fx-border-color: black;" text="Merge">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/arrow_merge.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <InnerShadow />
+         </effect></JFXButton>
+      <JFXButton fx:id="exitBtn" contentDisplay="TOP" onAction="#exitBtnAction" prefHeight="66.0" prefWidth="139.0" style="-fx-background-color: teal; -fx-border-color: black;" text="Exit">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <InnerShadow />
+         </effect></JFXButton>
+   </children>
+</VBox>

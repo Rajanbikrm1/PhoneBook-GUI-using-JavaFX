@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="510.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="phonebookgui.ListTableController">
+   <children>
+      <TableView fx:id="tableView" prefHeight="465.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="nameCoulmn" prefWidth="162.0" text="Name" />
+          <TableColumn fx:id="numberColumn" prefWidth="157.0" text="Phone Number" />
+            <TableColumn fx:id="notesColumn" prefWidth="280.0" text="Notes" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="mergeButton" layoutX="243.0" layoutY="471.0" onAction="#mergeButtonAction" prefHeight="31.0" prefWidth="129.0" stylesheets="@Button.css" text="Merge Contacts" />
+   </children>
+</AnchorPane>

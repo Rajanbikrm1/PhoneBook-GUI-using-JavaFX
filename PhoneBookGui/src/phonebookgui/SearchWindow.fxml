@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.validation.RequiredFieldValidator?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="233.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="phonebookgui.SearchWindowController">
+   <children>
+      <JFXTextField fx:id="searchByNameTf" labelFloat="true" layoutX="14.0" layoutY="27.0" prefHeight="29.0" prefWidth="227.0" promptText="Search By Name" style="-fx-background-color: lightblue; -fx-border-color: black;" stylesheets="@ValidationStyle.css" />
+      <JFXButton fx:id="searchByNameBtn" layoutX="276.0" layoutY="27.0" onAction="#searchByNameAction" stylesheets="@ButtonStyle.css" text="Go" />
+      <JFXTextField fx:id="searchNyNumberTf" labelFloat="true" layoutX="14.0" layoutY="97.0" prefHeight="29.0" prefWidth="227.0" promptText="Search By Number" style="-fx-background-color: lightblue; -fx-border-color: black;" stylesheets="@ValidationStyle.css" />
+      <JFXButton fx:id="searchByNumber" layoutX="276.0" layoutY="97.0" onAction="#searchByNumberAction" stylesheets="@ButtonStyle.css" text="Go" />
+      <JFXTextField fx:id="searchByNotesTf" labelFloat="true" layoutX="14.0" layoutY="166.0" prefHeight="29.0" prefWidth="227.0" promptText="Search By Notes" style="-fx-background-color: lightblue; -fx-border-color: black;" stylesheets="@ValidationStyle.css" />
+      <JFXButton fx:id="searchByNotes" layoutX="276.0" layoutY="166.0" onAction="#searchByNotesAction" stylesheets="@ButtonStyle.css" text="Go" />
+      <RequiredFieldValidator fx:id="nameValidator" layoutX="14.0" layoutY="69.0" message="Name Field is empty" />
+      <RequiredFieldValidator fx:id="numberValidator" layoutX="14.0" layoutY="140.0" message="Number field is Empty" />
+      <RequiredFieldValidator fx:id="notesValidator" layoutX="14.0" layoutY="207.0" message="Notes Field is empty" />
+   </children>
+</AnchorPane>

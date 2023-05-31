@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="522.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="phonebookgui.MainWindowController">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="497.0" fitWidth="620.0" layoutX="-9.0" layoutY="29.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Pictures/SplashWindowPicture.jpg" />
+         </image></ImageView>
+      <JFXHamburger fx:id="hamBurger" layoutX="-1.0" layoutY="-1.0" onMousePressed="#hamBurgerMouseAction" prefHeight="39.0" prefWidth="30.0" stylesheets="@HamBurgerCss.css" />
+      <MenuBar fx:id="menuBar" layoutX="28.0" layoutY="-2.0" prefHeight="32.0" prefWidth="583.0" style="-fx-background-color: pink;">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="newMenuItem" mnemonicParsing="false" onAction="#addMenuItemAction" text="Add/Delete          Ctrl+N" />
+                  <MenuItem fx:id="searchMenuItem" mnemonicParsing="false" onAction="#searchMenuItemAction" text="Search Inventory  Ctrl+E" />
+                  <MenuItem fx:id="editMenuItem" mnemonicParsing="false" onAction="#editMenuItemAction" text="Edit Inventory      Ctrl+E" />
+                  <MenuItem fx:id="listMenuItem" mnemonicParsing="false" onAction="#listMenuItemAction" text="List                       Ctrl+L" />
+                  <MenuItem fx:id="mergeMenuItem" mnemonicParsing="false" onAction="#signOutMenuItemAction" text="Merge                  Ctrl+M" />
+                  <MenuItem fx:id="menuItemClose" mnemonicParsing="false" onAction="#exitMenuItemAction" text="Exit                       Alt+F4" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <JFXDrawer fx:id="jDrawer" defaultDrawerSize="290.0" direction="RIGHT" layoutX="479.0" prefHeight="522.0" prefWidth="132.0" />
+   </children>
+</AnchorPane>
